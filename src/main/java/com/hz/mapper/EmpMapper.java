@@ -32,5 +32,5 @@ public interface EmpMapper {
 
     //获取当前页的结果列表
     @Select("select * from emp")
-    public List<Emp> page(Integer start, Integer pageSize);
+    public List<Emp> page();
 }

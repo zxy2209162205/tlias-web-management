@@ -43,7 +43,7 @@ public class EmpServiceImpl implements EmpService {
         // 设置分页参数
         PageHelper.startPage(page, pageSize);
         // 执行分页查询
-        List<Emp> empList = empMapper.list();
+        List<Emp> empList = empMapper.page();
         // 获取分页结果
         Page<Emp> p = (Page<Emp>) empList;
         //封装PageBean
